@@ -35,17 +35,17 @@
 		7372B2F514CD3D3B00F9FF5B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7372B2F714CD3D3B00F9FF5B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7372B2F914CD3D3B00F9FF5B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		7372B2FD14CD3D3B00F9FF5B /* KiwiSample-Info.plist */ = {isa = PBXFileReference; path = "KiwiSample-Info.plist"; sourceTree = "<group>"; };
+		7372B2FD14CD3D3B00F9FF5B /* KiwiSample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KiwiSample-Info.plist"; sourceTree = "<group>"; };
 		7372B2FF14CD3D3B00F9FF5B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7372B30114CD3D3B00F9FF5B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		7372B30314CD3D3B00F9FF5B /* KiwiSample-Prefix.pch */ = {isa = PBXFileReference; path = "KiwiSample-Prefix.pch"; sourceTree = "<group>"; };
-		7372B30414CD3D3B00F9FF5B /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		7372B30314CD3D3B00F9FF5B /* KiwiSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KiwiSample-Prefix.pch"; sourceTree = "<group>"; };
+		7372B30414CD3D3B00F9FF5B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7372B30514CD3D3B00F9FF5B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		7372B30C14CD3D3B00F9FF5B /* KiwiSampleTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KiwiSampleTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7372B30D14CD3D3B00F9FF5B /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		7372B31514CD3D3B00F9FF5B /* KiwiSampleTests-Info.plist */ = {isa = PBXFileReference; path = "KiwiSampleTests-Info.plist"; sourceTree = "<group>"; };
+		7372B31514CD3D3B00F9FF5B /* KiwiSampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KiwiSampleTests-Info.plist"; sourceTree = "<group>"; };
 		7372B31714CD3D3B00F9FF5B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		7372B31914CD3D3B00F9FF5B /* KiwiSampleTests.h */ = {isa = PBXFileReference; path = KiwiSampleTests.h; sourceTree = "<group>"; };
+		7372B31914CD3D3B00F9FF5B /* KiwiSampleTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KiwiSampleTests.h; sourceTree = "<group>"; };
 		7372B31A14CD3D3B00F9FF5B /* KiwiSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KiwiSampleTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -367,6 +367,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KiwiSample/KiwiSample-Prefix.pch";
 				INFOPLIST_FILE = "KiwiSampleTests/KiwiSampleTests-Info.plist";
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
@@ -384,6 +385,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KiwiSample/KiwiSample-Prefix.pch";
 				INFOPLIST_FILE = "KiwiSampleTests/KiwiSampleTests-Info.plist";
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
@@ -409,6 +411,7 @@
 				7372B32014CD3D3B00F9FF5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7372B32114CD3D3B00F9FF5B /* Build configuration list for PBXNativeTarget "KiwiSampleTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +420,7 @@
 				7372B32314CD3D3B00F9FF5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,32 +1,13 @@
-//
-//  KiwiSampleTests.m
-//  KiwiSampleTests
-//
-//  Created by  on 12/01/23.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
-//
+#import "Kiwi.h"
 
-#import "KiwiSampleTests.h"
+SPEC_BEGIN(MathSpec)
 
-@implementation KiwiSampleTests
+describe(@"Math", ^{
+    it(@"is pretty cool", ^{
+        NSUInteger a = 19;
+        NSUInteger b = 26;
+        [[theValue(a + b) should] equal:theValue(42)];
+    });
+});
 
-- (void)setUp
-{
-    [super setUp];
-    
-    // Set-up code here.
-}
-
-- (void)tearDown
-{
-    // Tear-down code here.
-    
-    [super tearDown];
-}
-
-- (void)testExample
-{
-    STFail(@"Unit tests are not implemented yet in KiwiSampleTests");
-}
-
-@end
+SPEC_END
