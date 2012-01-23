@@ -18,6 +18,7 @@
 		7372B31014CD3D3B00F9FF5B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7372B2F714CD3D3B00F9FF5B /* Foundation.framework */; };
 		7372B31814CD3D3B00F9FF5B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7372B31614CD3D3B00F9FF5B /* InfoPlist.strings */; };
 		7372B31B14CD3D3B00F9FF5B /* KiwiSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7372B31A14CD3D3B00F9FF5B /* KiwiSampleTests.m */; };
+		739F447F14CD445A0004B802 /* libKiwi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 739F447814CD42790004B802 /* libKiwi.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +28,34 @@
 			proxyType = 1;
 			remoteGlobalIDString = 7372B2F014CD3D3B00F9FF5B;
 			remoteInfo = KiwiSample;
+		};
+		739F447714CD42790004B802 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 739F446E14CD42790004B802 /* Kiwi.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F5015B9F11583A77002E9A98;
+			remoteInfo = Kiwi;
+		};
+		739F447914CD42790004B802 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 739F446E14CD42790004B802 /* Kiwi.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F5015C9E11584017002E9A98;
+			remoteInfo = KiwiTests;
+		};
+		739F447B14CD42790004B802 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 739F446E14CD42790004B802 /* Kiwi.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A3B16542139967B800E9CC6E;
+			remoteInfo = KiwiExamples;
+		};
+		739F447D14CD43C30004B802 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 739F446E14CD42790004B802 /* Kiwi.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F5015B9E11583A77002E9A98;
+			remoteInfo = Kiwi;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -47,6 +76,7 @@
 		7372B31714CD3D3B00F9FF5B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7372B31914CD3D3B00F9FF5B /* KiwiSampleTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KiwiSampleTests.h; sourceTree = "<group>"; };
 		7372B31A14CD3D3B00F9FF5B /* KiwiSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KiwiSampleTests.m; sourceTree = "<group>"; };
+		739F446E14CD42790004B802 /* Kiwi.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Kiwi.xcodeproj; path = Kiwi/Kiwi.xcodeproj; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				739F447F14CD445A0004B802 /* libKiwi.a in Frameworks */,
 				7372B30E14CD3D3B00F9FF5B /* SenTestingKit.framework in Frameworks */,
 				7372B30F14CD3D3B00F9FF5B /* UIKit.framework in Frameworks */,
 				7372B31014CD3D3B00F9FF5B /* Foundation.framework in Frameworks */,
@@ -127,6 +158,7 @@
 		7372B31314CD3D3B00F9FF5B /* KiwiSampleTests */ = {
 			isa = PBXGroup;
 			children = (
+				739F446E14CD42790004B802 /* Kiwi.xcodeproj */,
 				7372B31914CD3D3B00F9FF5B /* KiwiSampleTests.h */,
 				7372B31A14CD3D3B00F9FF5B /* KiwiSampleTests.m */,
 				7372B31414CD3D3B00F9FF5B /* Supporting Files */,
@@ -141,6 +173,16 @@
 				7372B31614CD3D3B00F9FF5B /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		739F446F14CD42790004B802 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				739F447814CD42790004B802 /* libKiwi.a */,
+				739F447A14CD42790004B802 /* KiwiTests.octest */,
+				739F447C14CD42790004B802 /* KiwiExamples.octest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,6 +217,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				739F447E14CD43C30004B802 /* PBXTargetDependency */,
 				7372B31214CD3D3B00F9FF5B /* PBXTargetDependency */,
 			);
 			name = KiwiSampleTests;
@@ -200,6 +243,12 @@
 			mainGroup = 7372B2E614CD3D3B00F9FF5B;
 			productRefGroup = 7372B2F214CD3D3B00F9FF5B /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 739F446F14CD42790004B802 /* Products */;
+					ProjectRef = 739F446E14CD42790004B802 /* Kiwi.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				7372B2F014CD3D3B00F9FF5B /* KiwiSample */,
@@ -207,6 +256,30 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		739F447814CD42790004B802 /* libKiwi.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libKiwi.a;
+			remoteRef = 739F447714CD42790004B802 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		739F447A14CD42790004B802 /* KiwiTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = KiwiTests.octest;
+			remoteRef = 739F447914CD42790004B802 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		739F447C14CD42790004B802 /* KiwiExamples.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = KiwiExamples.octest;
+			remoteRef = 739F447B14CD42790004B802 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		7372B2EF14CD3D3B00F9FF5B /* Resources */ = {
@@ -268,6 +341,11 @@
 			isa = PBXTargetDependency;
 			target = 7372B2F014CD3D3B00F9FF5B /* KiwiSample */;
 			targetProxy = 7372B31114CD3D3B00F9FF5B /* PBXContainerItemProxy */;
+		};
+		739F447E14CD43C30004B802 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Kiwi;
+			targetProxy = 739F447D14CD43C30004B802 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -340,6 +418,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KiwiSample/KiwiSample-Prefix.pch";
 				INFOPLIST_FILE = "KiwiSample/KiwiSample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -351,6 +430,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KiwiSample/KiwiSample-Prefix.pch";
 				INFOPLIST_FILE = "KiwiSample/KiwiSample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -366,6 +446,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KiwiSample/KiwiSample-Prefix.pch";
+				HEADER_SEARCH_PATHS = Kiwi/Kiwi;
 				INFOPLIST_FILE = "KiwiSampleTests/KiwiSampleTests-Info.plist";
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -384,6 +465,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KiwiSample/KiwiSample-Prefix.pch";
+				HEADER_SEARCH_PATHS = Kiwi/Kiwi;
 				INFOPLIST_FILE = "KiwiSampleTests/KiwiSampleTests-Info.plist";
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
